@@ -122,7 +122,8 @@ html {
 	content: '';
 	width: 3vw;
 	height: 25vh;
-} 
+	z-index: -1;
+}
 
 .row.contenders:before {
 	border-right: none;
