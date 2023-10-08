@@ -1,0 +1,206 @@
+@font-face {
+	font-family: "Teko";
+	src: url("../../fonts/Teko-Variablefont_wght.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Chakra Petch";
+	src: url("../../fonts/ChakraPetch-Regular.ttf") format("truetype");
+}
+
+:root {
+  --fg-color: #fbfbfb;
+  --bg-color: #1a1a1a;
+}
+
+*:focus {
+	outline: none;
+}
+
+#wallpaper {
+	background: url("./img/lr300_green.jpg");
+	filter: brightness(80%) saturate(120%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+}
+
+#scanlines {
+	background:
+			repeating-linear-gradient(#ffffff00 0px, #00000029 2px, #00000029 2px, #ffffff00 4px );
+	mix-blend-mode: overlay;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.fl-outline {
+	background-size: 150% 150%;
+	background-repeat: no-repeat;
+	background-image: url(../../svg/fl_mark.svg);
+	background-attachment: fixed;
+}
+.main-outline {
+	background-position: 30% 40%;
+	opacity: 50%;
+}
+
+.secondary-outline {
+	background-position: 20% 30%;
+	opacity: 15%;
+}
+
+.secondary-text, .tertiary-text {
+	font-family: "Chakra Petch", monospace;
+	text-transform:uppercase;
+}
+
+.frame {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	position: absolute;
+	row-gap: 2vw;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--fg-color);
+	align-items: center;
+}
+
+.center {
+	flex: 0 1 auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.info-stack {
+	flex-direction: column;
+	row-gap: 3vw;
+}
+
+.detail-stack {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1vw;
+}
+
+.details-line {
+	flex-direction: row;
+	flex-grow: 1;
+	flex-basis: 0;
+	letter-spacing: .5vw;
+	margin: 0 6vw 0 6vw;
+}
+
+.secondary-info {
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%; /* 1rem */
+	text-indent: 1vw;
+	letter-spacing: 1vw;
+}
+
+.tertiary-text {
+	text-transform:uppercase;
+	font-size: .7vw;
+	font-style: normal;
+	color: var(--fg-color);
+}
+
+#division {
+	text-indent: 1vw;
+	text-align: center;
+	color: var(--fg-color);
+	width: 100%;
+}
+#stage {
+	text-indent: 3vw;
+	text-align: center;
+	letter-spacing: 3vw;
+	color: var(--fg-color);
+	width: 100%;
+}
+
+#maps {
+	text-indent: .52vw;
+	text-align: center;
+	align-items: center;
+	color: var(--fg-color);
+	width: 100%;
+}
+
+.contenders {
+	font-family: "Teko", sans-serif;
+	font-size: 16.5vh;
+	font-weight: 700;
+	letter-spacing: -0.3vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cutout {
+	color: black;
+	padding: 0.5vh 3vh 1.5vh 3vh;
+	background-color: white;
+	mix-blend-mode: screen;
+}
+
+.vs {
+	display: flex;
+	padding: 5vh 8vh 2.5vh 8vh;
+	color: var(--fg-color);
+}
+.team {
+	width: 50%;
+	font-weight: 700;
+	height: 20vh;
+}
+
+.team.flex-end {
+	text-align: right;
+}
+
+.team.flex-start {
+	text-align: left;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.logo {
+	width: auto;
+	height: 2vh;
+}
+
+.urt {
+	content:url(../../svg/urt_bullets.svg);
+}
+
+.fl {
+	content:url(../../svg/fl_mark_fill.svg);
+}
