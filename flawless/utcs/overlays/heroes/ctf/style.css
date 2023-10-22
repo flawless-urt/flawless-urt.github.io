@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "Teko";
-	src: url("../../fonts/Teko-VariableFont_wght.ttf") format("truetype");
+	font-family: "Teko Bold";
+	src: url("../../fonts/Teko-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -147,9 +147,8 @@
 }
 
 .contenders {
-	font-family: "Teko", sans-serif;
+	font-family: "Teko Bold", sans-serif;
 	font-size: 16.5vh;
-	font-weight: 700;
 	letter-spacing: -0.3vw;
 	display: flex;
 	justify-content: center;
@@ -170,7 +169,6 @@
 }
 .team {
 	width: 50%;
-	font-weight: 700;
 	height: 20vh;
 }
 
