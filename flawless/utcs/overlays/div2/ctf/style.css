@@ -58,12 +58,12 @@ input {
 }
 .main-outline {
 	background-position: 30% 40%;
-	opacity: 50%;
+	opacity: 30%;
 }
 
 .secondary-outline {
 	background-position: 20% 30%;
-	opacity: 15%;
+	opacity: 10%;
 }
 
 .secondary-text, .tertiary-text {
