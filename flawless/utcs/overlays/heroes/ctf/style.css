@@ -14,7 +14,16 @@
 }
 
 *:focus {
-	outline: none;
+    outline: none;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    background: transparent;
+    letter-spacing: inherit;
 }
 
 #wallpaper {
@@ -95,9 +104,10 @@
 }
 
 .detail-stack {
-	display: flex;
-	flex-direction: column;
-	row-gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+    flex-grow: 1;
 }
 
 .details-line {
@@ -138,7 +148,7 @@
 	width: 100%;
 }
 
-#maps {
+#maps, #gamemode {
 	text-indent: .52vw;
 	text-align: center;
 	align-items: center;
@@ -157,7 +167,7 @@
 
 .cutout {
 	color: black;
-	padding: 0.5vh 3vh 1.5vh 3vh;
+	padding: 4vh 3vh 1.5vh 3vh;
 	background-color: white;
 	mix-blend-mode: screen;
 }
@@ -172,11 +182,11 @@
 	height: 20vh;
 }
 
-.team.flex-end {
+.align-right {
 	text-align: right;
 }
 
-.team.flex-start {
+.align-left {
 	text-align: left;
 }
 
@@ -186,8 +196,12 @@
 }
 
 .flex-end {
-	display: flex;
-	justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-grow-half {
+    flex-grow: .5;
 }
 
 .logo {
