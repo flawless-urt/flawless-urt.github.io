@@ -1,8 +1,9 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
+    <script src="../../scripts/prefillOverlay.js" type="application/javascript"></script>
 </head>
-<body>
+<body onload="prefillOverlay()">
 <div id="background">
     <div id="wallpaper" class="bg"></div>
     <div id="scanlines" class="bg"></div>
@@ -36,7 +37,7 @@
         <div class="fl logo center"></div>
         <div class="detail-stack">
             <input class="tertiary-text flex-end align-right" value="Shoutcasted by: caster1 // caster2">
-            <input class="tertiary-text flex-end align-right" value="Fall 2023">
+            <input class="tertiary-text flex-end align-right" name="season" value="">
         </div>
     </div>
 </div>
